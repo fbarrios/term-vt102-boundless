@@ -31,7 +31,7 @@ sub _process_text {
 	for my $row ( $self->{'scrt'}[$y] ) {
 		$row = '' unless defined $row;
 
-		if ( length($row) - $x ) {
+		if ( length($row) < $x ) {
 			$row .= " " x ( $x - length($row) );
 		}
 
@@ -44,7 +44,7 @@ sub _process_text {
 	for my $row_attrs ( $self->{'scra'}[$y] ) {
 		$row_attrs = '' unless defined $row_attrs;
 
-		if ( ( length($row_attrs) / 2 ) - $x ) {
+		if ( ( length($row_attrs) / 2 ) < $x ) {
 			$row_attrs .= Term::VT102::DEFAULT_ATTR_PACKED x ( $x - ( length($row_attrs) / 2 ) );
 		}
 
