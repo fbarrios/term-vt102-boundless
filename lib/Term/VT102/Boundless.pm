@@ -6,7 +6,7 @@ use base qw/Term::VT102/;
 use strict;
 use warnings;
 
-our $VERSION = "0.03";
+our $VERSION = "0.05";
 
 sub new {
 	my ( $class, @args ) = @_;
