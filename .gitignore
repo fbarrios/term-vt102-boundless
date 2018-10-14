@@ -1,0 +1,11 @@
+/META.yml
+/META.json
+/MYMETA.*
+
+# ExtUtils::MakeMaker
+/*.gz
+/blib/
+/pm_to_blib
+/Makefile
+/Makefile.old
+/MANIFEST.bak
